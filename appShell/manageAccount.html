@@ -1,0 +1,50 @@
+<section id="manageAccount" style="display: none">
+    <div class="container page">
+        <h1>Manage Account</h1>
+
+        <form role="form" id="manageAccountForm">
+					<div class="form-group">
+						<label for="manageAccountUsername">Username:</label>
+						<input type="text" class="form-control" id="manageAccountUsername" required>
+					</div>
+					<div class="form-group">
+						<label for="manageAccountName">Name:</label>
+						<input type="text" class="form-control" id="manageAccountName" required>
+					</div>
+					<div class="form-group">
+						<label for="manageAccountEmail">Email:</label>
+						<input type="email" class="form-control" id="manageAccountEmail" required>
+					</div>
+					
+					
+					<button type="button" id="manageAccountButton" class="btn btn-default">Submit</button>
+
+					<button type="button" id="manageAccountPasswordButton" class="btn btn-default">Update Password</button>
+
+					<div id="manageAccountPasswordModal" class="modal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="close" id="manageAccountPasswordModalExit">&times;</span>
+						  	</div>
+						  	<div class="modal-body">
+								<form id="managePasswordForm">
+									<label for="manageAccountCurrentPassword">Current Password:</label>
+									<input type="password" class="form-control" id="manageAccountCurrentPassword" required>
+
+									<label for="manageAccountNewPassword">New Password:</label>
+									<input type="password" class="form-control" id="manageAccountNewPassword" required>
+
+									<label for="manageAccountConfirmPassword">New Password Confirmation:</label>
+									<input type="password" class="form-control" id="manageAccountConfirmPassword" required>
+								</form>
+						  	</div>
+						 	<div class="modal-footer">
+									<button type="button" id="manageAccountPasswordModalButton" class="btn btn-default">Submit</button>								
+						  	</div>
+						</div>
+					</div>
+					  
+		  	</form>
+        
+    </div>
+</section>

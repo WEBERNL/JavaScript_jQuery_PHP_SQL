@@ -1,0 +1,42 @@
+/*style and animation of modal*/
+.modal-content {
+    position: relative;
+    background-color:gray;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid black;
+    width: 30%;
+    -webkit-animation-name: animateModal;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animateModal;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes animateModal {
+    from {top:-300px;} 
+    to {top:0px;}
+}
+
+@keyframes animateModal {
+    from {top:-300px;}
+    to {top:0px;}
+}
+
+
+/*style of modal body*/
+.modal-body {
+    padding: 15px;
+}
+
+
+/*style of input elements in modal body*/
+.modal-body input {
+    margin: 0px 5px 5px 5px;
+}
+
+
+/*style of label elements in modal body*/
+.modal-body label{
+    margin: 5px 5px 0px 5px;
+}
+
